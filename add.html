@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Add AniyomiExtensions repo</title>
+<meta http-equiv="refresh" content="0; url=aniyomi://add-repo?url=https://darealfreak.github.io/aniyomi-extensions-repo/index.min.json">
+<style>
+  :root { color-scheme: light dark; }
+  body { font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+         max-width: 36rem; margin: 4rem auto; padding: 0 1.25rem; }
+  h1 { font-size: 1.4rem; margin-bottom: .5rem; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+         background: rgba(127,127,127,.18); padding: .1rem .35rem;
+         border-radius: .25rem; word-break: break-all; }
+  p { margin: .75rem 0; }
+  a.button { display: inline-block; margin-top: .5rem; padding: .55rem .9rem;
+             background: #d33; color: #fff; text-decoration: none;
+             border-radius: .35rem; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>Opening Aniyomi&hellip;</h1>
+<p>If Aniyomi didn't open automatically, tap the button below.</p>
+<p><a class="button" href="aniyomi://add-repo?url=https://darealfreak.github.io/aniyomi-extensions-repo/index.min.json">Add repo in Aniyomi</a></p>
+<p>Or paste this URL manually under <em>Settings &rarr; Browse &rarr; Extension repos &rarr; Add</em>:</p>
+<p><code>https://darealfreak.github.io/aniyomi-extensions-repo/index.min.json</code></p>
+<script>
+  // Some browsers ignore meta-refresh to non-http schemes; nudge them with JS.
+  location.replace("aniyomi://add-repo?url=https://darealfreak.github.io/aniyomi-extensions-repo/index.min.json");
+</script>
+</body>
+</html>
